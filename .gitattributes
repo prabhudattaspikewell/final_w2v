@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+Sentence_transformer-l6 filter=lfs diff=lfs merge=lfs -text
+Sentence_transformer-l6.pkl filter=lfs diff=lfs merge=lfs -text
+Sentence_transformer-l6.txt filter=lfs diff=lfs merge=lfs -text

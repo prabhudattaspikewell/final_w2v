@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/eb0020c1-66f5-4b17-adab-236e1820280c/AppServices/subscriptions/eb0020c1-66f5-4b17-adab-236e1820280c/resourceGroups/QnAMaker_Custom_RG/providers/Microsoft.Web/sites/api-qnamaker-flask-test-001",
+    "appService.deploySubpath": "."
+}
