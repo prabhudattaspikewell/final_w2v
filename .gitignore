@@ -4,4 +4,3 @@ venv/
 w2vecmodel.pb
 w2vecmodel.pb.vectors.npy
 Sentence_transformer-l6.txt
-test.py
