@@ -3,6 +3,7 @@ colorama==0.4.5
 Cython==0.29.28
 et-xmlfile==1.1.0
 Flask==2.2.2
+Flask-Cors==3.0.10
 gensim==4.2.0
 importlib-metadata==5.0.0
 itsdangerous==2.1.2
