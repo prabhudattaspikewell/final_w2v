@@ -1,6 +1,6 @@
 
 from flask import Flask, render_template, jsonify, request
-
+from flask_cors import CORS, cross_origin
 import os
 import pandas as pd
 import numpy
@@ -16,13 +16,17 @@ from gensim import corpora
 
 
 app = Flask(__name__)
+CORS(app)
 #api=Api(app)
 
 
 df = pd.read_excel("Client_data.xlsx")
 
 df1 = df[['Question', 'Answer']]
+
+
 @app.route("/get_predict", methods=["POST"])
+@cross_origin()
 def answer():
     data = request.get_json()
     print(data)
@@ -201,5 +205,5 @@ def w2v(question):
 #     return retrieveAndPrintFAQAnswer(question_embedding, sent_embeddings, df1, cleaned_sentences)
 
 if __name__ == '__main__':
-    # app.run(host="0.0.0.0", debug=True)
-    app.run(port=80, debug=True)
+    app.run(debug=True)
+    # app.run(debug=True)
