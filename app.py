@@ -199,5 +199,7 @@ def w2v(question):
 #     question_embedding = model.encode([question])
 #     print("Response from model1:\n")
 #     return retrieveAndPrintFAQAnswer(question_embedding, sent_embeddings, df1, cleaned_sentences)
+
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", debug=True)
+    # app.run(host="0.0.0.0", debug=True)
+    app.run(port=80, debug=True)
