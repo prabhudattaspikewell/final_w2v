@@ -84,7 +84,6 @@ w2vec_embedding_size = len(v2w_model['computer'])
 
 def get_word_vec(word, model):
     samp = model['computer']
-    vec = [0] * len(samp)
     try:
         vec = model[word]
     except Exception:
